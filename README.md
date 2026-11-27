@@ -365,19 +365,6 @@ timeline
 
 ---
 
-## 🖥️ My Setup
-
-| | |
-|---|---|
-| 💻 **PC** | AMD Ryzen 7 5700X · NVIDIA RTX 5060 (8 GB), built myself |
-| 🖨️ **3D printing** | Bambu Lab X2D Combo with AMS |
-| 🚁 **Drone** | DJI Mini 5 Pro |
-| 🔌 **Electronics** | Arduino: LCD displays and text animations |
-| ⌨️ **Editor** | VS Code + Claude Code |
-| 🏍️ **Off the keyboard** | Motorcycles |
-
----
-
 ## 📊 GitHub Analytics
 
 <div align="center">

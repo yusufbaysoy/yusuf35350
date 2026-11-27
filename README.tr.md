@@ -365,19 +365,6 @@ timeline
 
 ---
 
-## 🖥️ Kurulumum
-
-| | |
-|---|---|
-| 💻 **PC** | AMD Ryzen 7 5700X · NVIDIA RTX 5060 (8 GB), kendim topladım |
-| 🖨️ **3D yazıcı** | Bambu Lab X2D Combo (AMS'li) |
-| 🚁 **Drone** | DJI Mini 5 Pro |
-| 🔌 **Elektronik** | Arduino: LCD ekranlar ve yazı animasyonları |
-| ⌨️ **Editör** | VS Code + Claude Code |
-| 🏍️ **Klavyeden uzakta** | Motosikletler |
-
----
-
 <a id="istatistikler"></a>
 
 ## 📊 GitHub İstatistikleri
