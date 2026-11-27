@@ -316,19 +316,26 @@ Yaptığım işlere göre gruplanmış, açık kaynak Claude Code **skill** ve *
 ### 🆕 Son açık repolarım
 
 <!-- REPOS_START -->
-_Bu liste her gün otomatik olarak güncellenir._
+- **[claude-toolkit](https://github.com/yusuf35350/claude-toolkit)** (★ 0): Curated Claude Code skills and MCP servers for Laravel/PHP, mobile, game, desktop and everyday development
 <!-- REPOS_END -->
 
 ### 🤝 Başka projelere katkılarım
 
 <!-- CONTRIBUTIONS_START -->
-_Başkalarının projelerinde birleştirilen pull request'lerim burada otomatik olarak görünür._
+_Henüz başka projelerde birleştirilmiş pull request yok. İlkleri yolda._
 <!-- CONTRIBUTIONS_END -->
 
 ### 📡 Son hareketler
 
 <!-- ACTIVITY_START -->
-_Bu liste her gün otomatik olarak güncellenir._
+- **25 Kas** · [feitangyuan/onetake](https://github.com/feitangyuan/onetake) reposuna yıldız verdi
+- **25 Kas** · [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) reposuna yıldız verdi
+- **25 Kas** · [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) reposuna yıldız verdi
+- **25 Kas** · [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad) reposuna yıldız verdi
+- **25 Kas** · [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill) reposuna yıldız verdi
+- **25 Kas** · [ersinkoc/phonebox](https://github.com/ersinkoc/phonebox) reposuna yıldız verdi
+- **22 Kas** · [Jakeschincariol/day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill) reposuna yıldız verdi
+- **10 Kas** · [open-jarvis/OpenJarvis](https://github.com/open-jarvis/OpenJarvis) reposuna yıldız verdi
 <!-- ACTIVITY_END -->
 
 ---
@@ -473,6 +480,7 @@ Küçük işletmeler ve diğer geliştiricilerle şu konularda çalışmaktan ke
 </div>
 
 <!-- UPDATED_START -->
+<p align="center"><sub>Otomatik güncellendi: 27 Kasım 2026 13:19 · İstanbul saati</sub></p>
 <!-- UPDATED_END -->
 
 <p align="center">

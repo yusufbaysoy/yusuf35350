@@ -316,19 +316,26 @@ My open-source collection of Claude Code **skills** and **MCP servers**, grouped
 ### 🆕 My latest public repositories
 
 <!-- REPOS_START -->
-_This list updates automatically every day._
+- **[claude-toolkit](https://github.com/yusuf35350/claude-toolkit)** (★ 0): Curated Claude Code skills and MCP servers for Laravel/PHP, mobile, game, desktop and everyday development
 <!-- REPOS_END -->
 
 ### 🤝 Contributions to other projects
 
 <!-- CONTRIBUTIONS_START -->
-_Merged pull requests to other people's projects show up here automatically._
+_No merged pull requests to other projects yet. The first ones are on the way._
 <!-- CONTRIBUTIONS_END -->
 
 ### 📡 Recent activity
 
 <!-- ACTIVITY_START -->
-_This list updates automatically every day._
+- **Nov 25** · Starred [feitangyuan/onetake](https://github.com/feitangyuan/onetake)
+- **Nov 25** · Starred [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)
+- **Nov 25** · Starred [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
+- **Nov 25** · Starred [earthtojake/text-to-cad](https://github.com/earthtojake/text-to-cad)
+- **Nov 25** · Starred [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill)
+- **Nov 25** · Starred [ersinkoc/phonebox](https://github.com/ersinkoc/phonebox)
+- **Nov 22** · Starred [Jakeschincariol/day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill)
+- **Nov 10** · Starred [open-jarvis/OpenJarvis](https://github.com/open-jarvis/OpenJarvis)
 <!-- ACTIVITY_END -->
 
 ---
@@ -471,6 +478,7 @@ I enjoy working with small businesses and fellow developers on:
 </div>
 
 <!-- UPDATED_START -->
+<p align="center"><sub>Auto-updated November 27, 2026 at 01:19 PM · Europe/Istanbul</sub></p>
 <!-- UPDATED_END -->
 
 <p align="center">
