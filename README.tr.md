@@ -48,8 +48,6 @@
 
 Ben **Yusuf**, **İzmir**'li bir geliştiriciyim. **PHP & Laravel ile web uygulamaları**, **React Native ile mobil uygulamalar** ve **PC (masaüstü) uygulamaları** geliştiriyorum, ayrıca **oyun tasarımı** yapıyorum. Son zamanlarda boş vaktimin çoğu **MCP sunucuları, Claude Code skill'leri ve yerel LLM'lere** gidiyor.
 
-Aynı zamanda motosiklet satış ve servis işletmesi **Nes Motors**'un içindeyim. Bu yüzden geliştirdiğim şeylerin çoğu tezgâhta gördüğüm bir sorunla başlıyor: form olması gereken bir evrak, veritabanı olması gereken bir Excel, randevu olması gereken bir telefon görüşmesi.
-
 ```php
 <?php
 

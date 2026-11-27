@@ -48,8 +48,6 @@
 
 I'm **Yusuf**, a developer from **İzmir, Türkiye**. I build **web apps with PHP & Laravel**, **mobile apps with React Native**, **desktop (PC) apps**, and I also do **game design**. Lately most of my free time goes into **MCP servers, Claude Code skills and local LLMs**.
 
-I'm also part of **Nes Motors**, a motorcycle sales and service business, so a lot of what I build starts as a problem I've seen at the counter: paperwork that should be a form, a spreadsheet that should be a database, a phone call that should be an appointment.
-
 ```php
 <?php
 
