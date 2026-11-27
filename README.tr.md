@@ -404,8 +404,6 @@ timeline
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=yusuf35350&theme=tokyo-night&hide_border=true&area=true&color=f97316&line=f97316&point=ffffff" alt="Katkı aktivite grafiği"/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=yusuf35350&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="GitHub kupaları"/>
-
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yusuf35350/yusuf35350/output/snake-light.svg">
   <img width="100%" src="https://raw.githubusercontent.com/yusuf35350/yusuf35350/output/snake-dark.svg" alt="Son bir yılın katkı grafiği, yılan animasyonu olarak">
