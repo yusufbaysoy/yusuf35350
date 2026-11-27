@@ -1,0 +1,163 @@
+name: Update profile README
+
+# Runs every day and on demand (Actions tab > Update profile README > Run workflow).
+#
+#   readme   rewrites the REPOS / CONTRIBUTIONS / ACTIVITY / UPDATED blocks in README.md and README.tr.md
+#   visuals  renders the stats cards, the claude-toolkit pin card and the contribution snake and pushes them to the
+#            `output` branch, which the READMEs load images from
+#
+# Note: GitHub pauses scheduled workflows in public repos after 60 days without
+# repository activity, and commits pushed with GITHUB_TOKEN don't count as activity.
+# If you want it to keep running on its own forever, create a fine-grained PAT with
+# "Contents: Read and write" on this repo only and save it as the ACTIVITY_PAT secret.
+
+on:
+  schedule:
+    - cron: '43 3 * * *' # 06:43 Türkiye time
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/profile.yml'
+
+permissions: {}
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.ACTIVITY_PAT || secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Update generated sections
+        run: node scripts/update-readme.mjs
+        env:
+          PROFILE_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- README.md README.tr.md; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md README.tr.md
+          git commit -m "chore: refresh profile README [skip ci]"
+          git push
+
+  visuals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      PROFILE_USER: ${{ github.repository_owner }}
+    steps:
+      - name: Check out the output branch, or start it
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          url="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads "$url" output >/dev/null 2>&1; then
+            git clone --quiet --depth 1 --branch output "$url" dist
+          else
+            git init --quiet -b output dist
+            git -C dist remote add origin "$url"
+          fi
+
+      # A card that fails to render keeps yesterday's file on the output branch.
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: stats
+          options: username=${{ env.PROFILE_USER }}&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&card_width=480&theme=tokyonight&title_color=f97316&icon_color=f97316
+          path: dist/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: stats
+          options: username=${{ env.PROFILE_USER }}&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&rank_icon=github&card_width=480&theme=default&title_color=c2410c&icon_color=c2410c
+          path: dist/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: top-langs
+          options: username=${{ env.PROFILE_USER }}&layout=compact&langs_count=8&hide_border=true&card_width=380&theme=tokyonight&title_color=f97316
+          path: dist/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: top-langs
+          options: username=${{ env.PROFILE_USER }}&layout=compact&langs_count=8&hide_border=true&card_width=380&theme=default&title_color=c2410c
+          path: dist/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: claude-toolkit pin card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=${{ env.PROFILE_USER }}&repo=claude-toolkit&hide_border=true&theme=tokyonight&title_color=f97316&icon_color=f97316
+          path: dist/pin-claude-toolkit-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: claude-toolkit pin card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        continue-on-error: true
+        with:
+          card: pin
+          options: username=${{ env.PROFILE_USER }}&repo=claude-toolkit&hide_border=true&theme=default&title_color=c2410c&icon_color=c2410c
+          path: dist/pin-claude-toolkit-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Contribution snake
+        uses: Platane/snk/svg-only@v3
+        continue-on-error: true
+        with:
+          github_user_name: ${{ env.PROFILE_USER }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#f97316
+            dist/snake-light.svg?palette=github-light&color_snake=#c2410c
+
+      - name: Push to the output branch
+        working-directory: dist
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No visual changes."
+            exit 0
+          fi
+          git commit --quiet -m "chore: update profile cards and snake [skip ci]"
+          git push --quiet origin output
