@@ -314,7 +314,8 @@ My open-source collection of Claude Code **skills** and **MCP servers**, grouped
 ### 🆕 My latest public repositories
 
 <!-- REPOS_START -->
-- **[claude-toolkit](https://github.com/yusuf35350/claude-toolkit)** (★ 0): Curated Claude Code skills and MCP servers for Laravel/PHP, mobile, game, desktop and everyday development
+- **[yusuf35350](https://github.com/yusufbaysoy/yusuf35350)** (JavaScript · ★ 0): Profile README
+- **[claude-toolkit](https://github.com/yusufbaysoy/claude-toolkit)** (Python · ★ 0): Curated Claude Code skills and MCP servers for Laravel/PHP, mobile, game, desktop and everyday development
 <!-- REPOS_END -->
 
 ### 🤝 Contributions to other projects
@@ -326,6 +327,7 @@ _No merged pull requests to other projects yet. The first ones are on the way._
 ### 📡 Recent activity
 
 <!-- ACTIVITY_START -->
+- **Nov 27** · Created branch `main` in [yusufbaysoy/yusuf35350](https://github.com/yusufbaysoy/yusuf35350)
 - **Nov 25** · Starred [feitangyuan/onetake](https://github.com/feitangyuan/onetake)
 - **Nov 25** · Starred [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)
 - **Nov 25** · Starred [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
@@ -461,7 +463,7 @@ I enjoy working with small businesses and fellow developers on:
 </div>
 
 <!-- UPDATED_START -->
-<p align="center"><sub>Auto-updated November 27, 2026 at 01:19 PM · Europe/Istanbul</sub></p>
+<p align="center"><sub>Auto-updated November 28, 2026 at 03:21 PM · Europe/Istanbul</sub></p>
 <!-- UPDATED_END -->
 
 <p align="center">

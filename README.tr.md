@@ -314,7 +314,8 @@ Yaptığım işlere göre gruplanmış, açık kaynak Claude Code **skill** ve *
 ### 🆕 Son açık repolarım
 
 <!-- REPOS_START -->
-- **[claude-toolkit](https://github.com/yusuf35350/claude-toolkit)** (★ 0): Curated Claude Code skills and MCP servers for Laravel/PHP, mobile, game, desktop and everyday development
+- **[yusuf35350](https://github.com/yusufbaysoy/yusuf35350)** (JavaScript · ★ 0): Profile README
+- **[claude-toolkit](https://github.com/yusufbaysoy/claude-toolkit)** (Python · ★ 0): Curated Claude Code skills and MCP servers for Laravel/PHP, mobile, game, desktop and everyday development
 <!-- REPOS_END -->
 
 ### 🤝 Başka projelere katkılarım
@@ -326,6 +327,7 @@ _Henüz başka projelerde birleştirilmiş pull request yok. İlkleri yolda._
 ### 📡 Son hareketler
 
 <!-- ACTIVITY_START -->
+- **27 Kas** · [yusufbaysoy/yusuf35350](https://github.com/yusufbaysoy/yusuf35350) içinde `main` branch oluşturdu
 - **25 Kas** · [feitangyuan/onetake](https://github.com/feitangyuan/onetake) reposuna yıldız verdi
 - **25 Kas** · [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) reposuna yıldız verdi
 - **25 Kas** · [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill) reposuna yıldız verdi
@@ -463,7 +465,7 @@ Küçük işletmeler ve diğer geliştiricilerle şu konularda çalışmaktan ke
 </div>
 
 <!-- UPDATED_START -->
-<p align="center"><sub>Otomatik güncellendi: 27 Kasım 2026 13:19 · İstanbul saati</sub></p>
+<p align="center"><sub>Otomatik güncellendi: 28 Kasım 2026 15:21 · İstanbul saati</sub></p>
 <!-- UPDATED_END -->
 
 <p align="center">
